@@ -23,6 +23,8 @@
                             <p:graphicImage library="images" name="car.jpg"
                                             width="125" height="100"/>
                             <h:outputText value="High quality Cars"/>
+                            <p:commandButton value="View Cars" ajax="false"
+                                             action="#{mainViewController.navigateToCar}"/>
                         </p:panelGrid>
                     </p:fieldset>
                     <p:fieldset legend="Pickup Truck" toggleSpeed="300" toggleable="true">
@@ -30,6 +32,8 @@
                             <p:graphicImage library="images" name="pickup_truck.jpg"
                                             width="125" height="100"/>
                             <h:outputText value="High quality Trucks"/>
+                            <p:commandButton value="View Trucks" ajax="false"
+                                             action="#{mainViewController.navigateToPickup}"/>
                         </p:panelGrid>
                     </p:fieldset>
                     <p:fieldset legend="SUV" toggleSpeed="300" toggleable="true">
@@ -39,6 +43,8 @@
                                             width="125" height="100"/>
                             <p:scrollPanel mode="native" style="width: 500px; height: 100px;">
                             <h:outputText value="High quality SUVs"/>
+                            <p:commandButton value="View SUVs" ajax="false"
+                                             action="#{mainViewController.navigateToSuv}"/>
                             </p:scrollPanel>
                         </p:panelGrid>
                     </p:fieldset>
